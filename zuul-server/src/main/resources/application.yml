@@ -1,7 +1,9 @@
 zuul:
   routes:
+    # zuul会将/pay/**请求路由到serviceId为pay-server
     pay-server:
       path: /pay/**
+    # zuul会将/order/**请求路由到serviceId为order-server
     order-server:
       path: /order/**
   host:
